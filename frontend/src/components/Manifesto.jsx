@@ -95,18 +95,6 @@ const Manifesto = () => {
           </div>
         </div>
 
-        {/* Bottom decoration */}
-        <div className="flex justify-center mt-8">
-          <div className="flex items-center gap-2">
-            {[...Array(5)].map((_, i) => (
-              <Star
-                key={i}
-                className="w-6 h-6 text-[#F9C93A]"
-                style={{ animationDelay: `${i * 0.2}s` }}
-              />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
