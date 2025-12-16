@@ -42,13 +42,13 @@ const Hero = () => {
 
             <h1 className="comic-title text-[#F9C93A] text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-6 leading-tight">
               MAKE<br />
-              <span className="text-[#E1D3C1]">HOLDING</span><br />
+              <span className="text-white">HOLDING</span><br />
               GREAT AGAIN
             </h1>
 
-            <p className="marker-text text-[#E1D3C1] text-xl sm:text-2xl mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="marker-text text-white text-xl sm:text-2xl mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
               Diamond hands only. Paper hands need not apply. 
-              We're not here to flip — we're here to <span className="text-[#F9C93A]">HODL</span>.
+              We're not here to flip — we're here to <span className="text-[#F9C93A] font-bold">HODL</span>.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -61,7 +61,7 @@ const Hero = () => {
               </a>
               <a
                 href="#manifesto"
-                className="cartoon-btn bg-[#353535] text-[#E1D3C1] px-8 py-4 text-2xl inline-flex items-center justify-center gap-2 border-[#F9C93A]"
+                className="cartoon-btn bg-[#262626] text-[#F9C93A] px-8 py-4 text-2xl inline-flex items-center justify-center gap-2 border-[#F9C93A]"
               >
                 <span>READ MANIFESTO</span>
                 <ArrowDown className="w-6 h-6 animate-bounce" />
@@ -84,19 +84,33 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* Hero Image with Frame */}
           <div className="relative flex justify-center lg:justify-end">
             {/* Glowing background */}
             <div className="absolute inset-0 bg-gradient-radial from-[#F9C93A]/30 to-transparent rounded-full blur-3xl" />
             
-            {/* Main character image */}
+            {/* Main character image with decorative frame */}
             <div className="relative animate-float">
-              <img
-                src={siteConfig.heroImage}
-                alt="MHGA Duck"
-                className="w-full max-w-md lg:max-w-lg xl:max-w-xl drop-shadow-2xl"
-                style={{ filter: 'drop-shadow(0 0 30px rgba(249, 201, 58, 0.4))' }}
-              />
+              {/* Outer gold frame */}
+              <div className="relative p-3 sm:p-4 bg-gradient-to-br from-[#F9C93A] via-[#D2A31E] to-[#F9C93A] rounded-lg shadow-[8px_8px_0_#262626] border-4 border-[#262626]">
+                {/* Inner dark frame border */}
+                <div className="p-2 bg-[#262626] rounded-md">
+                  {/* Image container with cream mat */}
+                  <div className="p-2 sm:p-3 bg-[#E1D3C1] rounded-sm">
+                    <img
+                      src={siteConfig.heroImage}
+                      alt="MHGA Duck"
+                      className="w-full max-w-md lg:max-w-lg xl:max-w-xl rounded-sm"
+                    />
+                  </div>
+                </div>
+                
+                {/* Frame corner decorations */}
+                <div className="absolute top-1 left-1 w-6 h-6 border-t-4 border-l-4 border-[#262626] rounded-tl-lg" />
+                <div className="absolute top-1 right-1 w-6 h-6 border-t-4 border-r-4 border-[#262626] rounded-tr-lg" />
+                <div className="absolute bottom-1 left-1 w-6 h-6 border-b-4 border-l-4 border-[#262626] rounded-bl-lg" />
+                <div className="absolute bottom-1 right-1 w-6 h-6 border-b-4 border-r-4 border-[#262626] rounded-br-lg" />
+              </div>
               
               {/* Comic-style action lines */}
               <svg className="absolute -top-10 -left-10 w-24 h-24" viewBox="0 0 100 100">
@@ -119,7 +133,7 @@ const Hero = () => {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center gap-2">
-          <span className="marker-text text-[#E1D3C1] text-sm">Scroll Down</span>
+          <span className="marker-text text-white text-sm">Scroll Down</span>
           <ArrowDown className="w-6 h-6 text-[#F9C93A]" />
         </div>
       </div>
