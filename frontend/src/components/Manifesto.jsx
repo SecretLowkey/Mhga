@@ -1,6 +1,6 @@
 import React from 'react';
 import { manifesto } from '../data/mock';
-import { Quote, Star } from 'lucide-react';
+import { Quote } from 'lucide-react';
 
 const Manifesto = () => {
   return (
