@@ -80,12 +80,9 @@ const Footer = () => {
         <div className="h-1 bg-gradient-to-r from-transparent via-[#F9C93A]/50 to-transparent mb-8" />
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+        <div className="text-center">
           <p className="text-white/70 text-sm">
             © 2025 $MHGA. This is not financial advice. DYOR.
-          </p>
-          <p className="flex items-center gap-2 text-white/70 text-sm">
-            Made with <Heart className="w-4 h-4 text-[#FF7373] animate-pulse" /> by diamond hands
           </p>
         </div>
 
