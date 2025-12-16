@@ -114,8 +114,8 @@ const Community = () => {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#E1D3C1] flex items-center justify-center text-[#262626] group-hover:animate-wobble">
                 {social.icon}
               </div>
-              <h3 className="comic-title text-[#262626] text-xl mb-2">{social.name}</h3>
-              <p className="text-[#353535] text-sm">{social.description}</p>
+              <h3 className="comic-title-light text-[#262626] text-xl mb-2">{social.name}</h3>
+              <p className="text-[#353535] text-sm font-medium">{social.description}</p>
               <div className="mt-4 flex items-center justify-center gap-2 text-[#F9C93A]">
                 <span className="marker-text">Join Now</span>
                 <ExternalLink className="w-4 h-4" />
