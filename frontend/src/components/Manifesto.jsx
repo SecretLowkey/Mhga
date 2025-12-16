@@ -88,7 +88,7 @@ const Manifesto = () => {
 
           {/* Closing */}
           <div className="text-center">
-            <p className="text-[#E1D3C1]/90 text-lg whitespace-pre-line leading-relaxed mb-8">
+            <p className="text-white text-lg whitespace-pre-line leading-relaxed mb-8">
               {manifesto.closing}
             </p>
 
