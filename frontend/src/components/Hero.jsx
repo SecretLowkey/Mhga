@@ -1,16 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { siteConfig } from '../data/mock';
-import { ArrowDown, Copy, Check } from 'lucide-react';
 
 const Hero = () => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyCA = () => {
-    navigator.clipboard.writeText(siteConfig.contractAddress);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
     <section className="min-h-screen relative overflow-hidden pt-32 sm:pt-36 pb-12 flex items-center">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
