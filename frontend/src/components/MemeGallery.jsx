@@ -18,14 +18,6 @@ const MemeGallery = () => {
 
   return (
     <section id="memes" className="py-20 px-4 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-5 animate-float" style={{ animationDelay: '0s' }}>
-        <div className="text-6xl">🎨</div>
-      </div>
-      <div className="absolute bottom-20 right-5 animate-float" style={{ animationDelay: '1.5s' }}>
-        <div className="text-6xl">🖼️</div>
-      </div>
-
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

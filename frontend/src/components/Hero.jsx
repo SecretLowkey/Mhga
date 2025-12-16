@@ -57,7 +57,6 @@ const Hero = () => {
                 className="cartoon-btn bg-[#F9C93A] text-[#262626] px-8 py-4 text-2xl inline-flex items-center justify-center gap-2"
               >
                 <span>BUY $MHGA</span>
-                <span className="animate-wobble">🚀</span>
               </a>
               <a
                 href="#manifesto"

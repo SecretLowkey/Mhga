@@ -139,7 +139,6 @@ const Community = () => {
                 className="cartoon-btn bg-[#262626] text-[#F9C93A] px-10 py-4 text-2xl inline-flex items-center gap-3"
               >
                 <span>BUY $MHGA NOW</span>
-                <span className="animate-bounce">🚀</span>
               </a>
             </div>
           </div>
