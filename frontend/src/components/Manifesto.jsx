@@ -54,7 +54,7 @@ const Manifesto = () => {
 
           {/* Body */}
           <div className="mb-8">
-            <p className="text-[#E1D3C1]/90 text-lg whitespace-pre-line leading-relaxed">
+            <p className="text-white text-lg whitespace-pre-line leading-relaxed">
               {manifesto.body}
             </p>
           </div>
