@@ -9,8 +9,7 @@ export const siteConfig = {
   buyLink: "#",
   socials: {
     twitter: "#",
-    telegram: "#",
-    discord: "#"
+    telegram: "#"
   }
 };
 
