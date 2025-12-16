@@ -128,10 +128,10 @@ const Community = () => {
         <div className="text-center">
           <div className="inline-block">
             <div className="sketch-border bg-[#F9C93A] p-8 transform hover:-rotate-1 transition-transform">
-              <h3 className="comic-title text-[#262626] text-3xl sm:text-4xl mb-4">
+              <h3 className="comic-title-light text-[#262626] text-3xl sm:text-4xl mb-4">
                 READY TO HODL?
               </h3>
-              <p className="text-[#262626]/80 mb-6 text-lg">
+              <p className="text-[#262626] mb-6 text-lg font-medium">
                 Join thousands of diamond hands making holding great again.
               </p>
               <a
