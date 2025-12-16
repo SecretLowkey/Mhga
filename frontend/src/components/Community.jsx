@@ -79,7 +79,7 @@ const Community = () => {
         </div>
 
         {/* Social Links */}
-        <div className="grid sm:grid-cols-3 gap-6 mb-12">
+        <div className="grid sm:grid-cols-2 gap-6 mb-12 max-w-2xl mx-auto">
           {socials.map((social, index) => (
             <a
               key={social.name}
