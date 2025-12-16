@@ -81,17 +81,17 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center">
-          <p className="text-[#E1D3C1]/60 text-sm">
+          <p className="text-white/70 text-sm">
             © 2025 $MHGA. This is not financial advice. DYOR.
           </p>
-          <p className="flex items-center gap-2 text-[#E1D3C1]/60 text-sm">
+          <p className="flex items-center gap-2 text-white/70 text-sm">
             Made with <Heart className="w-4 h-4 text-[#FF7373] animate-pulse" /> by diamond hands
           </p>
         </div>
 
         {/* Disclaimer */}
         <div className="mt-8 text-center">
-          <p className="text-[#E1D3C1]/40 text-xs max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/50 text-xs max-w-2xl mx-auto leading-relaxed">
             $MHGA is a meme coin with no intrinsic value or expectation of financial return. 
             There is no formal team or roadmap. The coin is completely useless and for entertainment purposes only.
           </p>
