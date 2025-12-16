@@ -18,7 +18,7 @@ const Footer = () => {
               />
               <span className="comic-title text-[#F9C93A] text-3xl">$MHGA</span>
             </div>
-            <p className="marker-text text-[#E1D3C1]/80 text-lg">
+            <p className="marker-text text-white text-lg">
               Make Holding Great Again
             </p>
           </div>
