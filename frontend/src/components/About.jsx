@@ -12,10 +12,6 @@ const iconMap = {
 const About = () => {
   return (
     <section id="about" className="py-20 px-4 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-10 left-10 w-20 h-20 border-4 border-dashed border-[#F9C93A]/30 rounded-full animate-spin" style={{ animationDuration: '20s' }} />
-      <div className="absolute bottom-10 right-10 w-32 h-32 border-4 border-dashed border-[#43E7D3]/30 transform rotate-45 animate-spin" style={{ animationDuration: '25s' }} />
-
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
