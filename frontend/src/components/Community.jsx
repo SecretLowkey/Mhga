@@ -66,10 +66,10 @@ const Community = () => {
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="comic-title text-[#E1D3C1] text-4xl sm:text-5xl lg:text-6xl mb-4">
-            JOIN THE <span className="text-[#F9C93A]">MOVEMENT</span>
+          <h2 className="comic-title text-[#F9C93A] text-4xl sm:text-5xl lg:text-6xl mb-4">
+            JOIN THE <span className="text-white">MOVEMENT</span>
           </h2>
-          <p className="marker-text text-[#E1D3C1]/80 text-xl">
+          <p className="marker-text text-white text-xl">
             Connect with fellow diamond hands
           </p>
         </div>
