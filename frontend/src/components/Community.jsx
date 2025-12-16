@@ -95,7 +95,7 @@ const Community = () => {
           </div>
           {siteConfig.contractAddress === 'Coming Soon' && (
             <p className="marker-text text-[#F9C93A] mt-4 text-lg animate-pulse">
-              🚀 Launching Soon! Stay Tuned!
+              Launching Soon! Stay Tuned!
             </p>
           )}
         </div>

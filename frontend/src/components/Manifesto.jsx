@@ -48,7 +48,7 @@ const Manifesto = () => {
           {/* Divider */}
           <div className="flex items-center justify-center my-8">
             <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-[#F9C93A]/50 to-transparent" />
-            <div className="mx-4 text-[#F9C93A] text-3xl">🦆</div>
+            <div className="mx-4 text-[#F9C93A] text-3xl">★</div>
             <div className="flex-1 h-1 bg-gradient-to-r from-transparent via-[#F9C93A]/50 to-transparent" />
           </div>
 

@@ -35,7 +35,7 @@ const Hero = () => {
             {/* Comic-style speech bubble */}
             <div className="inline-block mb-6 animate-bounce-in">
               <div className="relative bg-[#F9C93A] px-6 py-2 rounded-full border-4 border-[#262626] shadow-[4px_4px_0_#262626]">
-                <span className="marker-text text-[#262626] text-lg">🦆 The OG Holder Duck</span>
+                <span className="marker-text text-[#262626] text-lg">The OG Holder Duck</span>
                 <div className="absolute -bottom-3 left-8 w-4 h-4 bg-[#F9C93A] border-b-4 border-r-4 border-[#262626] transform rotate-45" />
               </div>
             </div>
