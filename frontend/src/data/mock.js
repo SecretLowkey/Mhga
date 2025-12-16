@@ -59,38 +59,22 @@ export const memeGallery = [
   {
     id: 1,
     title: "Diamond Hands Forever",
-    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/b9mdys7w_IMG_4526.png",
-    likes: 420
+    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/b9mdys7w_IMG_4526.png"
   },
   {
     id: 2,
     title: "HODL Commander",
-    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/sp2agmvp_image.png",
-    likes: 369
+    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/sp2agmvp_image.png"
   },
   {
     id: 3,
     title: "Paper Hands Begone",
-    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/b9mdys7w_IMG_4526.png",
-    likes: 247
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/z9w4mk1q_IMG_4529.jpeg"
   },
   {
     id: 4,
     title: "The Golden Duck",
-    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/sp2agmvp_image.png",
-    likes: 513
-  },
-  {
-    id: 5,
-    title: "Never Selling",
-    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/b9mdys7w_IMG_4526.png",
-    likes: 188
-  },
-  {
-    id: 6,
-    title: "Holding Strong",
-    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/sp2agmvp_image.png",
-    likes: 299
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/59ug9ukb_IMG_4530.jpeg"
   }
 ];
 
