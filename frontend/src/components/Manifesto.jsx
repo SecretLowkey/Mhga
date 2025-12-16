@@ -79,8 +79,8 @@ const Manifesto = () => {
 
             {/* Signature style closing */}
             <div className="inline-block">
-              <div className="bg-[#F9C93A] px-8 py-4 rounded-lg border-4 border-[#262626] shadow-[6px_6px_0_#000] transform -rotate-2 hover:rotate-0 transition-transform">
-                <span className="comic-title text-[#262626] text-2xl sm:text-3xl">
+              <div className="bg-[#F9C93A] px-8 py-4 rounded-lg border-4 border-[#262626] shadow-[6px_6px_0_#262626] transform -rotate-2 hover:rotate-0 transition-transform">
+                <span className="comic-title-light text-[#262626] text-2xl sm:text-3xl">
                   Make Holding Great Again.
                 </span>
               </div>
