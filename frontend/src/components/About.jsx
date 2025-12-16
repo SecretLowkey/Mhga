@@ -77,7 +77,7 @@ const About = () => {
               <a href="#" className="cartoon-btn bg-[#F9C93A] text-[#262626] px-6 py-3 text-lg">
                 Join Telegram
               </a>
-              <a href="#" className="cartoon-btn bg-[#353535] text-[#E1D3C1] px-6 py-3 text-lg border-[#F9C93A]">
+              <a href="#" className="cartoon-btn bg-[#262626] text-[#F9C93A] px-6 py-3 text-lg border-[#F9C93A]">
                 Follow Twitter
               </a>
             </div>
