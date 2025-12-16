@@ -58,27 +58,19 @@ const Hero = () => {
               </a>
             </div>
 
-            {/* Contract Address */}
-            <div className="mt-8 sketch-border-gold bg-[#262626] px-6 py-4 max-w-xl mx-auto lg:mx-0">
-              <p className="comic-title text-[#F9C93A] text-lg mb-2 text-center lg:text-left">Contract Address</p>
-              <div className="flex items-center gap-3">
-                <div className="flex-1 bg-[#353535] px-4 py-3 rounded-lg border-2 border-[#F9C93A]/50">
-                  <code className="text-white text-base sm:text-lg break-all block text-center lg:text-left">
-                    {siteConfig.contractAddress}
-                  </code>
-                </div>
-                <button
-                  onClick={handleCopyCA}
-                  className="cartoon-btn bg-[#F9C93A] text-[#262626] p-3 flex-shrink-0"
-                >
-                  {copied ? <Check className="w-6 h-6" /> : <Copy className="w-6 h-6" />}
-                </button>
-              </div>
-              {copied && (
-                <p className="marker-text text-[#43E7D3] mt-2 text-sm text-center lg:text-left">
-                  Copied to clipboard!
-                </p>
-              )}
+            {/* Join X Community */}
+            <div className="mt-8 flex justify-center lg:justify-start">
+              <a
+                href="https://x.com/i/communities/2001047013874393090"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sketch-border-gold bg-[#262626] px-8 py-4 inline-flex items-center gap-4 hover:bg-[#353535] transition-colors"
+              >
+                <svg className="w-8 h-8 text-[#F9C93A]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+                <span className="comic-title text-[#F9C93A] text-xl sm:text-2xl">JOIN X COMMUNITY</span>
+              </a>
             </div>
 
             {/* Stats */}
