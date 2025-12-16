@@ -63,22 +63,6 @@ const About = () => {
           })}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <div className="sketch-border-gold bg-[#262626]/90 backdrop-blur-sm p-8 inline-block">
-            <p className="marker-text text-white text-2xl mb-4">
-              Ready to join the <span className="text-[#F9C93A]">movement</span>?
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a href="#" className="cartoon-btn bg-[#F9C93A] text-[#262626] px-6 py-3 text-lg">
-                Join Telegram
-              </a>
-              <a href="#" className="cartoon-btn bg-[#262626] text-[#F9C93A] px-6 py-3 text-lg border-[#F9C93A]">
-                Follow Twitter
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
