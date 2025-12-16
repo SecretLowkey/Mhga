@@ -136,20 +136,30 @@ code {
   animation: marquee 20s linear infinite;
 }
 
-/* Comic-style text */
+/* Comic-style text - for dark backgrounds (gold/white text) */
 .comic-title {
   font-family: 'Bangers', cursive;
   letter-spacing: 3px;
   text-shadow: 
-    4px 4px 0 var(--mhga-darker),
-    -2px -2px 0 var(--mhga-darker),
-    2px -2px 0 var(--mhga-darker),
-    -2px 2px 0 var(--mhga-darker),
-    0 0 20px rgba(249, 201, 58, 0.5);
+    3px 3px 0 var(--mhga-darker),
+    -1px -1px 0 var(--mhga-darker),
+    1px -1px 0 var(--mhga-darker),
+    -1px 1px 0 var(--mhga-darker);
+}
+
+/* Comic-style text - for light backgrounds (dark text, no shadow) */
+.comic-title-light {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 3px;
 }
 
 .marker-text {
   font-family: 'Permanent Marker', cursive;
+}
+
+/* Ensure consistent font across site */
+body {
+  font-family: 'Comic Neue', cursive, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* Cartoon button */
