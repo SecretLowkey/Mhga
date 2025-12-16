@@ -70,7 +70,7 @@ const About = () => {
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
           <div className="sketch-border-gold bg-[#262626]/90 backdrop-blur-sm p-8 inline-block">
-            <p className="marker-text text-[#E1D3C1] text-2xl mb-4">
+            <p className="marker-text text-white text-2xl mb-4">
               Ready to join the <span className="text-[#F9C93A]">movement</span>?
             </p>
             <div className="flex flex-wrap justify-center gap-4">
