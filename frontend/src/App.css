@@ -1,34 +1,214 @@
+/* Main App Styles - MHGA Memecoin */
+
+/* Remove default centering */
+.App {
+  min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation utilities */
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-}
-
-.App-link {
-    color: #61dafb;
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Radial gradient for hero glow */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 70%);
+}
+
+/* Cartoon paper texture effect */
+.paper-texture {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+}
+
+/* Hand-drawn underline effect */
+.hand-underline {
+  position: relative;
+}
+
+.hand-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10'%3E%3Cpath d='M0 5 Q25 0 50 5 T100 5' fill='none' stroke='%23F9C93A' stroke-width='3'/%3E%3C/svg%3E") repeat-x;
+  background-size: 100px 10px;
+}
+
+/* Jitter animation for cartoon effect */
+@keyframes jitter {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(1px, 1px) rotate(0.5deg); }
+  50% { transform: translate(0, -1px) rotate(-0.5deg); }
+  75% { transform: translate(-1px, 0) rotate(0.25deg); }
+}
+
+.animate-jitter {
+  animation: jitter 0.3s infinite;
+}
+
+/* Squiggly hover effect */
+@keyframes squiggle {
+  0% { filter: url('#squiggle-0'); }
+  25% { filter: url('#squiggle-1'); }
+  50% { filter: url('#squiggle-2'); }
+  75% { filter: url('#squiggle-3'); }
+  100% { filter: url('#squiggle-4'); }
+}
+
+.hover-squiggle:hover {
+  animation: squiggle 0.4s linear infinite;
+}
+
+/* Comic speech bubble styles */
+.speech-bubble {
+  position: relative;
+  background: #F9C93A;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: 3px solid #262626;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  border-width: 15px 10px 0;
+  border-style: solid;
+  border-color: #F9C93A transparent;
+}
+
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 27px;
+  border-width: 18px 13px 0;
+  border-style: solid;
+  border-color: #262626 transparent;
+}
+
+/* Cartoon shadow effect */
+.cartoon-shadow {
+  position: relative;
+}
+
+.cartoon-shadow::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+/* Wiggle animation on scroll reveal */
+@keyframes wiggle-in {
+  0% { transform: translateY(50px) rotate(-5deg); opacity: 0; }
+  50% { transform: translateY(-10px) rotate(3deg); opacity: 1; }
+  100% { transform: translateY(0) rotate(0deg); opacity: 1; }
+}
+
+.animate-wiggle-in {
+  animation: wiggle-in 0.6s ease-out forwards;
+}
+
+/* Stamp rotation effect */
+@keyframes stamp {
+  0% { transform: scale(2) rotate(-20deg); opacity: 0; }
+  50% { transform: scale(1.1) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(-2deg); opacity: 1; }
+}
+
+.animate-stamp {
+  animation: stamp 0.5s ease-out forwards;
+}
+
+/* Crayon stroke effect */
+.crayon-stroke {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 20'%3E%3Cpath d='M0 10 Q50 5 100 10 T200 10' fill='none' stroke='%23F9C93A' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% 15px;
+  padding-bottom: 15px;
+}
+
+/* Custom cursor for interactive elements */
+.cursor-duck {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20'%3E🦆%3C/text%3E%3C/svg%3E") 12 12, pointer;
+}
+
+/* Page section transitions */
+section {
+  position: relative;
+}
+
+/* Ensure proper layering */
+.z-100 {
+  z-index: 100;
+}
+
+/* Hide scrollbar but keep functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive text sizing */
+@media (max-width: 640px) {
+  .comic-title {
+    letter-spacing: 2px;
+  }
+}
+
+/* Animation delays for staggered effects */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Focus styles for accessibility */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #F9C93A;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 }
