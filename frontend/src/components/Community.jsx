@@ -52,17 +52,6 @@ const Community = () => {
 
   return (
     <section id="community" className="py-20 px-4 relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute inset-0 bg-[#262626]/30" />
-      
-      {/* Animated coins */}
-      <div className="absolute top-10 left-1/4 animate-float opacity-30" style={{ animationDelay: '0s' }}>
-        <img src={siteConfig.logo} alt="" className="w-16 h-16" />
-      </div>
-      <div className="absolute bottom-20 right-1/4 animate-float opacity-30" style={{ animationDelay: '2s' }}>
-        <img src={siteConfig.logo} alt="" className="w-12 h-12" />
-      </div>
-
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
