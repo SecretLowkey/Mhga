@@ -50,21 +50,23 @@ const Header = () => {
             ))}
           </div>
 
-          {/* CA & Buy Button */}
+          {/* Join X & Buy Button */}
           <div className="hidden md:flex items-center gap-4">
-            <button
-              onClick={handleCopyCA}
+            <a
+              href="https://x.com/i/communities/2001047013874393090"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-[#353535] px-4 py-2 rounded-lg border-2 border-[#F9C93A] hover:bg-[#F9C93A]/20 transition-colors"
             >
-              <span className="marker-text text-[#F9C93A] text-sm">
-                {siteConfig.contractAddress === 'Coming Soon' ? 'CA: Coming Soon' : `${siteConfig.contractAddress.slice(0, 6)}...${siteConfig.contractAddress.slice(-4)}`}
-              </span>
-              {siteConfig.contractAddress !== 'Coming Soon' && (
-                copied ? <Check className="w-4 h-4 text-[#43E7D3]" /> : <Copy className="w-4 h-4 text-[#F9C93A]" />
-              )}
-            </button>
+              <svg className="w-5 h-5 text-[#F9C93A]" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              <span className="marker-text text-[#F9C93A] text-sm">JOIN X</span>
+            </a>
             <a
               href={siteConfig.buyLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="cartoon-btn bg-[#F9C93A] text-[#262626] px-6 py-2 text-lg"
             >
               BUY $MHGA
