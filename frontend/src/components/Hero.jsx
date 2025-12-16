@@ -67,8 +67,23 @@ const Hero = () => {
               </a>
             </div>
 
+            {/* Contract Address */}
+            <div className="mt-8 sketch-border-gold bg-[#262626] px-6 py-4 max-w-xl mx-auto lg:mx-0">
+              <p className="comic-title text-[#F9C93A] text-lg mb-2 text-center lg:text-left">Contract Address</p>
+              <div className="bg-[#353535] px-4 py-3 rounded-lg border-2 border-[#F9C93A]/50">
+                <code className="text-white text-base sm:text-lg break-all block text-center lg:text-left">
+                  {siteConfig.contractAddress}
+                </code>
+              </div>
+              {siteConfig.contractAddress === 'Coming Soon' && (
+                <p className="marker-text text-[#F9C93A] mt-2 text-sm text-center lg:text-left animate-pulse">
+                  Launching Soon! Stay Tuned!
+                </p>
+              )}
+            </div>
+
             {/* Stats */}
-            <div className="mt-12 grid grid-cols-3 gap-4">
+            <div className="mt-8 grid grid-cols-3 gap-4">
               {[
                 { label: 'Holders', value: '???', sub: 'and counting' },
                 { label: 'Diamond', value: '100%', sub: 'hands only' },
