@@ -68,7 +68,7 @@ const Manifesto = () => {
 
           {/* Principles */}
           <div className="my-10">
-            <h4 className="marker-text text-[#E1D3C1] text-xl text-center mb-6">
+            <h4 className="marker-text text-white text-xl text-center mb-6">
               $MHGA stands for:
             </h4>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -80,7 +80,7 @@ const Manifesto = () => {
                   <div className="w-8 h-8 bg-[#F9C93A] rounded-full flex items-center justify-center flex-shrink-0 group-hover:animate-wobble">
                     <span className="comic-title text-[#262626] text-sm">{index + 1}</span>
                   </div>
-                  <span className="marker-text text-[#E1D3C1] text-lg">{principle}</span>
+                  <span className="marker-text text-white text-lg">{principle}</span>
                 </div>
               ))}
             </div>
