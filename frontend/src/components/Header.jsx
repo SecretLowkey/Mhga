@@ -1,18 +1,9 @@
 import React, { useState } from 'react';
 import { siteConfig } from '../data/mock';
-import { Menu, X, Copy, Check } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
-
-  const handleCopyCA = () => {
-    if (siteConfig.contractAddress !== 'Coming Soon') {
-      navigator.clipboard.writeText(siteConfig.contractAddress);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
-  };
 
   const navLinks = [
     { href: '#about', label: 'About' },
