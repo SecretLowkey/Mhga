@@ -5,29 +5,6 @@ import { ArrowDown, Sparkles } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden pt-32 sm:pt-36 pb-12 flex items-center">
-      {/* Animated background doodles */}
-      <div className="absolute inset-0 doodle-bg opacity-30" />
-      
-      {/* Floating decorative elements */}
-      <div className="absolute top-32 left-10 w-16 h-16 border-4 border-[#F9C93A] rounded-full animate-float opacity-40" style={{ animationDelay: '0s' }} />
-      <div className="absolute top-48 right-20 w-8 h-8 bg-[#FF7373] rounded-full animate-float opacity-40" style={{ animationDelay: '1s' }} />
-      <div className="absolute bottom-32 left-1/4 w-12 h-12 border-4 border-[#43E7D3] transform rotate-45 animate-float opacity-40" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-1/3 right-1/4 animate-float" style={{ animationDelay: '0.5s' }}>
-        <Sparkles className="w-10 h-10 text-[#F9C93A] opacity-50" />
-      </div>
-
-      {/* Hand-drawn SVG decorations */}
-      <svg className="absolute top-20 left-1/3 w-40 h-40 opacity-20" viewBox="0 0 100 100">
-        <path
-          d="M20,50 Q30,20 50,50 T80,50"
-          fill="none"
-          stroke="#F9C93A"
-          strokeWidth="3"
-          strokeLinecap="round"
-          className="animate-wobble"
-        />
-      </svg>
-
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
