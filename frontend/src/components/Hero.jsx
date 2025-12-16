@@ -4,7 +4,7 @@ import { ArrowDown, Sparkles } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen relative overflow-hidden pt-24 pb-12 flex items-center">
+    <section className="min-h-screen relative overflow-hidden pt-32 sm:pt-36 pb-12 flex items-center">
       {/* Animated background doodles */}
       <div className="absolute inset-0 doodle-bg opacity-30" />
       
