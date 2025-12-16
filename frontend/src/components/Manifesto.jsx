@@ -21,8 +21,8 @@ const Manifesto = () => {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-3 mb-6">
             <Star className="w-8 h-8 text-[#F9C93A] animate-wobble" />
-            <h2 className="comic-title text-[#E1D3C1] text-4xl sm:text-5xl lg:text-6xl">
-              THE <span className="text-[#F9C93A]">MANIFESTO</span>
+            <h2 className="comic-title text-[#F9C93A] text-4xl sm:text-5xl lg:text-6xl">
+              THE <span className="text-white">MANIFESTO</span>
             </h2>
             <Star className="w-8 h-8 text-[#F9C93A] animate-wobble" style={{ animationDelay: '0.5s' }} />
           </div>
