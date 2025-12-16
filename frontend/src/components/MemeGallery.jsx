@@ -105,7 +105,7 @@ const MemeGallery = () => {
                 className="w-full max-h-[70vh] object-contain"
               />
               <div className="p-6 text-center">
-                <h3 className="comic-title text-[#262626] text-2xl">{selectedMeme.title}</h3>
+                <h3 className="comic-title-light text-[#262626] text-2xl">{selectedMeme.title}</h3>
               </div>
             </div>
           </div>
