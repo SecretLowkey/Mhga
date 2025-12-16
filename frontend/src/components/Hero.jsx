@@ -61,14 +61,22 @@ const Hero = () => {
             {/* Contract Address */}
             <div className="mt-8 sketch-border-gold bg-[#262626] px-6 py-4 max-w-xl mx-auto lg:mx-0">
               <p className="comic-title text-[#F9C93A] text-lg mb-2 text-center lg:text-left">Contract Address</p>
-              <div className="bg-[#353535] px-4 py-3 rounded-lg border-2 border-[#F9C93A]/50">
-                <code className="text-white text-base sm:text-lg break-all block text-center lg:text-left">
-                  {siteConfig.contractAddress}
-                </code>
+              <div className="flex items-center gap-3">
+                <div className="flex-1 bg-[#353535] px-4 py-3 rounded-lg border-2 border-[#F9C93A]/50">
+                  <code className="text-white text-base sm:text-lg break-all block text-center lg:text-left">
+                    {siteConfig.contractAddress}
+                  </code>
+                </div>
+                <button
+                  onClick={handleCopyCA}
+                  className="cartoon-btn bg-[#F9C93A] text-[#262626] p-3 flex-shrink-0"
+                >
+                  {copied ? <Check className="w-6 h-6" /> : <Copy className="w-6 h-6" />}
+                </button>
               </div>
-              {siteConfig.contractAddress === 'Coming Soon' && (
-                <p className="marker-text text-[#F9C93A] mt-2 text-sm text-center lg:text-left animate-pulse">
-                  Launching Soon! Stay Tuned!
+              {copied && (
+                <p className="marker-text text-[#43E7D3] mt-2 text-sm text-center lg:text-left">
+                  Copied to clipboard!
                 </p>
               )}
             </div>
