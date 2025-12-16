@@ -40,7 +40,7 @@ const Manifesto = () => {
 
           {/* Intro */}
           <div className="mb-8">
-            <p className="marker-text text-[#E1D3C1] text-lg sm:text-xl whitespace-pre-line leading-relaxed">
+            <p className="marker-text text-white text-lg sm:text-xl whitespace-pre-line leading-relaxed">
               {manifesto.intro}
             </p>
           </div>
