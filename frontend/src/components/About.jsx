@@ -24,10 +24,10 @@ const About = () => {
               What is $MHGA?
             </span>
           </div>
-          <h2 className="comic-title text-[#E1D3C1] text-4xl sm:text-5xl lg:text-6xl mb-6">
-            THE <span className="text-[#F9C93A]">MOVEMENT</span>
+          <h2 className="comic-title text-[#F9C93A] text-4xl sm:text-5xl lg:text-6xl mb-6">
+            THE <span className="text-white">MOVEMENT</span>
           </h2>
-          <p className="marker-text text-[#E1D3C1]/80 text-xl max-w-2xl mx-auto">
+          <p className="marker-text text-white text-xl max-w-2xl mx-auto">
             $MHGA isn't just another memecoin. It's a battle cry for everyone who believes 
             that patience beats panic and conviction beats chaos.
           </p>
