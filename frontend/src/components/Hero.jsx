@@ -90,9 +90,9 @@ const Hero = () => {
                 { label: 'Rugs', value: '0', sub: 'forever' }
               ].map((stat, i) => (
                 <div key={i} className="sketch-card p-4 text-center" style={{ animationDelay: `${i * 0.2}s` }}>
-                  <div className="comic-title text-[#F9C93A] text-2xl sm:text-3xl">{stat.value}</div>
+                  <div className="comic-title-light text-[#D2A31E] text-2xl sm:text-3xl">{stat.value}</div>
                   <div className="marker-text text-[#262626] text-sm">{stat.label}</div>
-                  <div className="text-[#353535] text-xs">{stat.sub}</div>
+                  <div className="text-[#353535] text-xs font-medium">{stat.sub}</div>
                 </div>
               ))}
             </div>
