@@ -5,27 +5,12 @@ import { Quote, Star } from 'lucide-react';
 const Manifesto = () => {
   return (
     <section id="manifesto" className="py-20 px-4 relative overflow-hidden">
-      {/* Hand-drawn background pattern */}
-      <div className="absolute inset-0">
-        <svg className="w-full h-full opacity-5" preserveAspectRatio="none">
-          <pattern id="scribble" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-            <path d="M0 50 Q25 30 50 50 T100 50" fill="none" stroke="#F9C93A" strokeWidth="2" />
-            <circle cx="80" cy="20" r="5" fill="none" stroke="#FF7373" strokeWidth="2" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#scribble)" />
-        </svg>
-      </div>
-
       <div className="max-w-4xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-3 mb-6">
-            <Star className="w-8 h-8 text-[#F9C93A] animate-wobble" />
-            <h2 className="comic-title text-[#F9C93A] text-4xl sm:text-5xl lg:text-6xl">
-              THE <span className="text-white">MANIFESTO</span>
-            </h2>
-            <Star className="w-8 h-8 text-[#F9C93A] animate-wobble" style={{ animationDelay: '0.5s' }} />
-          </div>
+          <h2 className="comic-title text-[#F9C93A] text-4xl sm:text-5xl lg:text-6xl mb-6">
+            THE <span className="text-white">MANIFESTO</span>
+          </h2>
         </div>
 
         {/* Main Manifesto Card */}
