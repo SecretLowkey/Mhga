@@ -49,10 +49,10 @@ const About = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="comic-title text-[#262626] text-xl mb-2">
+                <h3 className="comic-title-light text-[#262626] text-xl mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-[#353535] leading-relaxed">
+                <p className="text-[#353535] leading-relaxed font-medium">
                   {feature.description}
                 </p>
 
