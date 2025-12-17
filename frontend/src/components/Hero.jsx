@@ -23,7 +23,7 @@ const Hero = () => {
               GREAT AGAIN
             </h1>
 
-            <p className="comic-title text-[#F9C93A] text-3xl sm:text-4xl mb-8">
+            <p className="marker-text text-white text-2xl sm:text-3xl mb-8">
               JUST HODL
             </p>
 
