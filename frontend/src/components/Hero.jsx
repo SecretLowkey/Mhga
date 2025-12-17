@@ -17,23 +17,14 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
-            {/* Comic-style speech bubble */}
-            <div className="inline-block mb-6 animate-bounce-in">
-              <div className="relative bg-[#F9C93A] px-6 py-2 rounded-full border-4 border-[#262626] shadow-[4px_4px_0_#262626]">
-                <span className="marker-text text-[#262626] text-lg">The OG Holder Duck</span>
-                <div className="absolute -bottom-3 left-8 w-4 h-4 bg-[#F9C93A] border-b-4 border-r-4 border-[#262626] transform rotate-45" />
-              </div>
-            </div>
-
             <h1 className="comic-title text-[#F9C93A] text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-6 leading-tight">
               MAKE<br />
               <span className="text-white">HOLDING</span><br />
               GREAT AGAIN
             </h1>
 
-            <p className="marker-text text-white text-xl sm:text-2xl mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Diamond hands only. Paper hands need not apply. 
-              We're not here to flip — we're here to <span className="text-[#F9C93A] font-bold">HODL</span>.
+            <p className="comic-title text-[#F9C93A] text-3xl sm:text-4xl mb-8">
+              JUST HODL
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
