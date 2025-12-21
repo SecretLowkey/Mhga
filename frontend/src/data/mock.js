@@ -75,6 +75,31 @@ export const memeGallery = [
     id: 4,
     title: "The Golden Duck",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/59ug9ukb_IMG_4530.jpeg"
+  },
+  {
+    id: 5,
+    title: "Never Selling",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/zz6ytm5x_IMG_4564.jpeg"
+  },
+  {
+    id: 6,
+    title: "To The Moon",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/aibgjgtv_IMG_4565.jpeg"
+  },
+  {
+    id: 7,
+    title: "WAGMI",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/6xiyptdl_IMG_4567.jpeg"
+  },
+  {
+    id: 8,
+    title: "Conviction Over Chaos",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/efdbnn3p_IMG_4568.jpeg"
+  },
+  {
+    id: 9,
+    title: "Community First",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/vahyfomk_IMG_4569.jpeg"
   }
 ];
 
