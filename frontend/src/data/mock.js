@@ -100,6 +100,26 @@ export const memeGallery = [
     id: 9,
     title: "Community First",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/vahyfomk_IMG_4569.jpeg"
+  },
+  {
+    id: 10,
+    title: "Patience Over Panic",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/37z19s4e_IMG_4570.jpeg"
+  },
+  {
+    id: 11,
+    title: "Holding Strong",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/svtqa9ss_IMG_4571.jpeg"
+  },
+  {
+    id: 12,
+    title: "Real Gains",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/qlc3m2w7_IMG_4572.jpeg"
+  },
+  {
+    id: 13,
+    title: "Long Term Vision",
+    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/f29gq14i_IMG_4573.jpeg"
   }
 ];
 
