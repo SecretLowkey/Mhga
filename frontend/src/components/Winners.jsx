@@ -5,14 +5,14 @@ const winners = [
   {
     id: 1,
     title: "1st Place Winner",
-    type: "image",
-    src: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/7vlnpcge_IMG_4651.jpeg"
+    type: "video",
+    src: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/i6z9sb93_-4433715872058725576.mp4"
   },
   {
     id: 2,
     title: "2nd Place Winner",
-    type: "video",
-    src: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/i6z9sb93_-4433715872058725576.mp4"
+    type: "image",
+    src: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/7vlnpcge_IMG_4651.jpeg"
   }
 ];
 
@@ -45,7 +45,7 @@ const Winners = () => {
               </div>
               
               {/* Media Container */}
-              <div className="aspect-square bg-[#353535]">
+              <div className="aspect-square bg-[#353535] relative">
                 {winner.type === 'image' ? (
                   <img
                     src={winner.src}
@@ -54,11 +54,15 @@ const Winners = () => {
                   />
                 ) : (
                   <video
-                    src={winner.src}
-                    controls
                     className="w-full h-full object-cover"
+                    controls
                     playsInline
-                  />
+                    preload="metadata"
+                    poster=""
+                  >
+                    <source src={winner.src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 )}
               </div>
             </div>
