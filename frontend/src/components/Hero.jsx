@@ -38,18 +38,45 @@ const Hero = () => {
               </a>
             </div>
 
-            {/* Join X Community */}
-            <div className="mt-6 flex justify-center lg:justify-start">
+            {/* Social Links Row */}
+            <div className="mt-6 flex flex-wrap justify-center lg:justify-start gap-4">
+              {/* Join X Community */}
               <a
                 href="https://x.com/i/communities/2001047013874393090"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="sketch-border-gold bg-[#262626] px-8 py-4 inline-flex items-center gap-4 hover:bg-[#353535] transition-colors"
+                className="sketch-border-gold bg-[#262626] px-6 py-3 inline-flex items-center gap-3 hover:bg-[#353535] transition-colors"
               >
-                <svg className="w-8 h-8 text-[#F9C93A]" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-7 h-7 text-[#F9C93A]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
-                <span className="comic-title text-[#F9C93A] text-xl sm:text-2xl">JOIN X COMMUNITY</span>
+                <span className="comic-title text-[#F9C93A] text-lg sm:text-xl">X COMMUNITY</span>
+              </a>
+
+              {/* TikTok */}
+              <a
+                href="https://tiktok.com/@mhga_sol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sketch-border-gold bg-[#262626] px-6 py-3 inline-flex items-center gap-3 hover:bg-[#353535] transition-colors"
+              >
+                <svg className="w-7 h-7 text-[#F9C93A]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+                <span className="comic-title text-[#F9C93A] text-lg sm:text-xl">TIKTOK</span>
+              </a>
+
+              {/* Linktree */}
+              <a
+                href="https://linktr.ee/mhgaonsol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sketch-border-gold bg-[#262626] px-6 py-3 inline-flex items-center gap-3 hover:bg-[#353535] transition-colors"
+              >
+                <svg className="w-7 h-7 text-[#F9C93A]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.517.528.93 1.055.93h1.95v5.093c0 .93.769 1.698 1.698 1.698h.65c.93 0 1.698-.769 1.698-1.698v-5.093h1.95c.528 0 .975-.413 1.055-.93 0-.162 0-.323-.08-.486l-4.063-7.803c-.244-.405-.65-.567-1.055-.567s-.812.162-1.055.567l-4.063 7.803zm3.793-12.768h.65c.93 0 1.698.769 1.698 1.698v2.14h-4.046v-2.14c0-.93.769-1.698 1.698-1.698z"/>
+                </svg>
+                <span className="comic-title text-[#F9C93A] text-lg sm:text-xl">LINKTREE</span>
               </a>
             </div>
 
