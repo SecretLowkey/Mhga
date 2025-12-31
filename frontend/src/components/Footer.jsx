@@ -65,7 +65,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href={siteConfig.socials.telegram}
+              href="https://t.me/mhgaportal"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 bg-[#353535] rounded-full border-2 border-[#F9C93A] flex items-center justify-center hover:bg-[#F9C93A] group transition-colors"

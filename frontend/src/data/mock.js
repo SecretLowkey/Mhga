@@ -9,7 +9,7 @@ export const siteConfig = {
   buyLink: "https://join.pump.fun/HSag/c7i0jbsy",
   socials: {
     twitter: "https://x.com/i/communities/2001047013874393090",
-    telegram: "#"
+    telegram: "https://t.me/mhgaportal"
   }
 };
 
