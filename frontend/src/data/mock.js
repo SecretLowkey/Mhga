@@ -58,66 +58,61 @@ Make Holding Great Again.`
 export const memeGallery = [
   {
     id: 1,
-    title: "Diamond Hands Forever",
-    image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/b9mdys7w_IMG_4526.png"
-  },
-  {
-    id: 2,
     title: "HODL Commander",
     image: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/sp2agmvp_image.png"
   },
   {
-    id: 3,
+    id: 2,
     title: "Paper Hands Begone",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/z9w4mk1q_IMG_4529.jpeg"
   },
   {
-    id: 4,
+    id: 3,
     title: "The Golden Duck",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/59ug9ukb_IMG_4530.jpeg"
   },
   {
-    id: 5,
+    id: 4,
     title: "Never Selling",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/zz6ytm5x_IMG_4564.jpeg"
   },
   {
-    id: 6,
+    id: 5,
     title: "To The Moon",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/aibgjgtv_IMG_4565.jpeg"
   },
   {
-    id: 7,
+    id: 6,
     title: "WAGMI",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/6xiyptdl_IMG_4567.jpeg"
   },
   {
-    id: 8,
+    id: 7,
     title: "Conviction Over Chaos",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/efdbnn3p_IMG_4568.jpeg"
   },
   {
-    id: 9,
+    id: 8,
     title: "Community First",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/vahyfomk_IMG_4569.jpeg"
   },
   {
-    id: 10,
+    id: 9,
     title: "Patience Over Panic",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/37z19s4e_IMG_4570.jpeg"
   },
   {
-    id: 11,
+    id: 10,
     title: "Holding Strong",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/svtqa9ss_IMG_4571.jpeg"
   },
   {
-    id: 12,
+    id: 11,
     title: "Real Gains",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/qlc3m2w7_IMG_4572.jpeg"
   },
   {
-    id: 13,
+    id: 12,
     title: "Long Term Vision",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/f29gq14i_IMG_4573.jpeg"
   }
