@@ -135,6 +135,31 @@ export const memeGallery = [
     id: 16,
     title: "Champagne Celebration",
     image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/hha5oxou_IMG_4729.jpeg"
+  },
+  {
+    id: 17,
+    title: "Climbing to the Moon",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/zulktgtd_IMG_4730.jpeg"
+  },
+  {
+    id: 18,
+    title: "No Jeets Allowed",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/wd8bkzso_IMG_4731.jpeg"
+  },
+  {
+    id: 19,
+    title: "Morning Coffee",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/u62mezn0_IMG_4732.jpeg"
+  },
+  {
+    id: 20,
+    title: "Solana Skater",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/ask42obz_IMG_4733.jpeg"
+  },
+  {
+    id: 21,
+    title: "Moonlight Suit",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/3snwy0sv_IMG_4734.jpeg"
   }
 ];
 
