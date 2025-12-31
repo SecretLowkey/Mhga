@@ -4,11 +4,11 @@ export const siteConfig = {
   name: "$MHGA",
   fullName: "Make Holding Great Again",
   logo: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/sp2agmvp_image.png",
-  heroImage: "https://customer-assets.emergentagent.com/job_9b77fa91-c9c2-402d-9615-2c3fc5b5a13a/artifacts/b9mdys7w_IMG_4526.png",
+  heroImage: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/658s03f7_image.png",
   contractAddress: "ACXK4KmfXrf93e3AEo1ZiGDDDpcBpNEnWVxy9BHFpump",
   buyLink: "https://join.pump.fun/HSag/c7i0jbsy",
   socials: {
-    twitter: "#",
+    twitter: "https://x.com/i/communities/2001047013874393090",
     telegram: "#"
   }
 };
