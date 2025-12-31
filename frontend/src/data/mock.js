@@ -110,6 +110,31 @@ export const memeGallery = [
     id: 11,
     title: "Long Term Vision",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/f29gq14i_IMG_4573.jpeg"
+  },
+  {
+    id: 12,
+    title: "Private Jet Life",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/e7c8ov2i_IMG_4725.jpeg"
+  },
+  {
+    id: 13,
+    title: "Mission Passed",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/n3a8f43r_IMG_4726.jpeg"
+  },
+  {
+    id: 14,
+    title: "Green Candles Only",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/nucd95t9_IMG_4727.jpeg"
+  },
+  {
+    id: 15,
+    title: "GM Money",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/fyirtswv_IMG_4728.jpeg"
+  },
+  {
+    id: 16,
+    title: "Champagne Celebration",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/hha5oxou_IMG_4729.jpeg"
   }
 ];
 
