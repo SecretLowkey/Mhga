@@ -160,6 +160,21 @@ export const memeGallery = [
     id: 21,
     title: "Moonlight Suit",
     image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/3snwy0sv_IMG_4734.jpeg"
+  },
+  {
+    id: 22,
+    title: "Bartender Vibes",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/dniwk2au_IMG_4735.jpeg"
+  },
+  {
+    id: 23,
+    title: "GM Couch Trader",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/fcy7fn7u_IMG_4736.jpeg"
+  },
+  {
+    id: 24,
+    title: "White Rabbit Time",
+    image: "https://customer-assets.emergentagent.com/job_quackcoin/artifacts/ulnr7nay_IMG_4737.jpeg"
   }
 ];
 
