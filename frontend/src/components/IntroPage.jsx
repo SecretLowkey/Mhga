@@ -4,7 +4,6 @@ import { Volume2, VolumeX, SkipForward, Play } from 'lucide-react';
 const IntroPage = ({ onComplete }) => {
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showPlayButton, setShowPlayButton] = useState(true);
   const videoRef = useRef(null);
 
   const startVideo = () => {
@@ -13,14 +12,12 @@ const IntroPage = ({ onComplete }) => {
       setIsMuted(false);
       videoRef.current.play().then(() => {
         setIsPlaying(true);
-        setShowPlayButton(false);
       }).catch(() => {
         // If unmuted autoplay fails, play muted
         videoRef.current.muted = true;
         setIsMuted(true);
         videoRef.current.play().then(() => {
           setIsPlaying(true);
-          setShowPlayButton(false);
         });
       });
     }
@@ -32,10 +29,9 @@ const IntroPage = ({ onComplete }) => {
       videoRef.current.muted = true;
       videoRef.current.play().then(() => {
         setIsPlaying(true);
-        setShowPlayButton(false);
       }).catch(() => {
-        // Show play button if autoplay fails
-        setShowPlayButton(true);
+        // Autoplay failed - user needs to click
+        console.log("Autoplay blocked");
       });
     }
   }, []);
@@ -71,8 +67,8 @@ const IntroPage = ({ onComplete }) => {
           <source src="https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/l8witp89_3252345276707501898.mp4" type="video/mp4" />
         </video>
 
-        {/* Play Button Overlay - shown if autoplay fails */}
-        {showPlayButton && (
+        {/* Play Button Overlay - shown if not playing */}
+        {!isPlaying && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/70">
             <button
               onClick={startVideo}
@@ -84,10 +80,10 @@ const IntroPage = ({ onComplete }) => {
           </div>
         )}
 
-        {/* Controls Overlay */}
-        {!showPlayButton && (
-          <div className="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-6">
-            {/* Mute/Unmute Button */}
+        {/* Controls Overlay - always show skip, show mute only when playing */}
+        <div className="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-6">
+          {/* Mute/Unmute Button - only when playing */}
+          {isPlaying && (
             <button
               onClick={toggleMute}
               className="cartoon-btn bg-[#F9C93A] text-[#262626] p-4 flex items-center gap-2"
@@ -104,17 +100,17 @@ const IntroPage = ({ onComplete }) => {
                 </>
               )}
             </button>
+          )}
 
-            {/* Skip Button */}
-            <button
-              onClick={handleSkip}
-              className="cartoon-btn bg-[#262626] text-[#F9C93A] p-4 flex items-center gap-2 border-2 border-[#F9C93A]"
-            >
-              <span className="comic-title-light text-lg">SKIP</span>
-              <SkipForward className="w-6 h-6" />
-            </button>
-          </div>
-        )}
+          {/* Skip Button - always visible */}
+          <button
+            onClick={handleSkip}
+            className="cartoon-btn bg-[#262626] text-[#F9C93A] p-4 flex items-center gap-2 border-2 border-[#F9C93A]"
+          >
+            <span className="comic-title-light text-lg">SKIP</span>
+            <SkipForward className="w-6 h-6" />
+          </button>
+        </div>
 
         {/* Logo watermark */}
         <div className="absolute top-6 left-6">
