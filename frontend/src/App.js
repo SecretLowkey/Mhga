@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+import IntroPage from "./components/IntroPage";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,6 +11,8 @@ import Community from "./components/Community";
 import Footer from "./components/Footer";
 
 function App() {
+  const [showIntro, setShowIntro] = useState(true);
+
   useEffect(() => {
     // Smooth scroll for anchor links
     const handleClick = (e) => {
@@ -33,6 +36,14 @@ function App() {
       });
     };
   }, []);
+
+  const handleIntroComplete = () => {
+    setShowIntro(false);
+  };
+
+  if (showIntro) {
+    return <IntroPage onComplete={handleIntroComplete} />;
+  }
 
   return (
     <div className="min-h-screen overflow-x-hidden">
