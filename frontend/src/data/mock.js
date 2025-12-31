@@ -108,11 +108,6 @@ export const memeGallery = [
   },
   {
     id: 11,
-    title: "Real Gains",
-    image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/qlc3m2w7_IMG_4572.jpeg"
-  },
-  {
-    id: 12,
     title: "Long Term Vision",
     image: "https://customer-assets.emergentagent.com/job_mhga-degens/artifacts/f29gq14i_IMG_4573.jpeg"
   }
