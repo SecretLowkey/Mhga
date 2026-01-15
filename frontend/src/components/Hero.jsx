@@ -1,9 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { siteConfig } from '../data/mock';
 import { ArrowDown, Copy, Check } from 'lucide-react';
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
+  const [liveData, setLiveData] = useState({
+    marketCap: null,
+    priceChange24h: null,
+    volume24h: null,
+    loading: true
+  });
+
+  // Fetch live data from DexScreener every 5 seconds
+  useEffect(() => {
+    const fetchLiveData = async () => {
+      try {
+        const response = await fetch('https://api.dexscreener.com/latest/dex/pairs/solana/D6okWxJpbBvtyZA1vedAWGvpE9yUZpUQYYFXsXVyUwkE');
+        const data = await response.json();
+        if (data.pair) {
+          setLiveData({
+            marketCap: data.pair.marketCap,
+            priceChange24h: data.pair.priceChange?.h24,
+            volume24h: data.pair.volume?.h24,
+            loading: false
+          });
+        }
+      } catch (error) {
+        console.error('Error fetching live data:', error);
+        setLiveData(prev => ({ ...prev, loading: false }));
+      }
+    };
+
+    fetchLiveData();
+    const interval = setInterval(fetchLiveData, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const formatNumber = (num) => {
+    if (num === null || num === undefined) return '---';
+    if (num >= 1000000) return `$${(num / 1000000).toFixed(2)}M`;
+    if (num >= 1000) return `$${(num / 1000).toFixed(1)}K`;
+    return `$${num.toFixed(0)}`;
+  };
 
   const handleCopyCA = () => {
     navigator.clipboard.writeText(siteConfig.contractAddress);
