@@ -33,15 +33,15 @@ const Header = () => {
             href="https://coinsniper.net/coin/88852" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="hidden lg:flex items-center gap-2 bg-[#353535] px-3 py-2 rounded-lg border-2 border-red-500 hover:bg-red-500/20 transition-colors group"
+            className="hidden lg:flex items-center gap-2 bg-[#353535] px-4 py-2 rounded-lg border-2 border-red-500 hover:bg-red-500/20 transition-colors group"
             title="Vote on CoinSniper"
           >
             <img 
-              src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/1oup6xyo_IMG_5057.jpeg"
+              src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/b3c8x1uw_image.png"
               alt="CoinSniper"
-              className="h-6 object-contain"
+              className="h-8 object-contain"
             />
-            <span className="text-red-500 text-xs font-bold group-hover:text-red-400">VOTE</span>
+            <span className="text-red-500 text-sm font-bold group-hover:text-red-400">VOTE</span>
           </a>
 
           {/* Desktop Nav */}

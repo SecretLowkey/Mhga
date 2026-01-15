@@ -92,15 +92,15 @@ const Hero = () => {
                 href="https://coinsniper.net/coin/88852"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 rounded-xl border-2 border-red-400 hover:from-red-500 hover:to-red-600 transition-all shadow-lg hover:shadow-red-500/30 hover:scale-105"
+                className="group flex items-center gap-4 bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 rounded-xl border-2 border-red-400 hover:from-red-500 hover:to-red-600 transition-all shadow-lg hover:shadow-red-500/30 hover:scale-105"
               >
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/1oup6xyo_IMG_5057.jpeg"
+                  src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/b3c8x1uw_image.png"
                   alt="CoinSniper"
-                  className="h-8 w-8 object-contain rounded"
+                  className="h-10 object-contain"
                 />
                 <div className="flex flex-col">
-                  <span className="text-white font-bold text-sm">VOTE ON COINSNIPER</span>
+                  <span className="text-white font-bold text-sm">VOTE FOR $MHGA</span>
                   <span className="text-red-200 text-xs">Help us moon!</span>
                 </div>
                 <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
