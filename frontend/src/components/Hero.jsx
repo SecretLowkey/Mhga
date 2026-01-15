@@ -86,6 +86,29 @@ const Hero = () => {
               </a>
             </div>
 
+            {/* CoinSniper Vote Banner */}
+            <div className="mt-6 flex justify-center lg:justify-start">
+              <a
+                href="https://coinsniper.net/coin/88852"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 rounded-xl border-2 border-red-400 hover:from-red-500 hover:to-red-600 transition-all shadow-lg hover:shadow-red-500/30 hover:scale-105"
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/1oup6xyo_IMG_5057.jpeg"
+                  alt="CoinSniper"
+                  className="h-8 w-8 object-contain rounded"
+                />
+                <div className="flex flex-col">
+                  <span className="text-white font-bold text-sm">VOTE ON COINSNIPER</span>
+                  <span className="text-red-200 text-xs">Help us moon!</span>
+                </div>
+                <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+
             {/* Contract Address */}
             <div className="mt-6 sketch-border-gold bg-[#262626] px-6 py-4 max-w-xl mx-auto lg:mx-0">
               <p className="comic-title text-[#F9C93A] text-lg mb-2 text-center lg:text-left">Contract Address</p>
