@@ -92,7 +92,7 @@ const Hero = () => {
                 href="https://coinsniper.net/coin/88852"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 bg-gradient-to-r from-red-600 to-red-700 px-6 py-3 rounded-xl border-2 border-red-400 hover:from-red-500 hover:to-red-600 transition-all shadow-lg hover:shadow-red-500/30 hover:scale-105"
+                className="group flex items-center gap-4 bg-white px-6 py-3 rounded-xl border-2 border-red-500 hover:bg-red-50 transition-all shadow-lg hover:shadow-red-500/30 hover:scale-105"
               >
                 <img 
                   src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/b3c8x1uw_image.png"
@@ -100,10 +100,10 @@ const Hero = () => {
                   className="h-10 object-contain"
                 />
                 <div className="flex flex-col">
-                  <span className="text-white font-bold text-sm">VOTE FOR $MHGA</span>
-                  <span className="text-red-200 text-xs">Help us moon!</span>
+                  <span className="text-red-600 font-bold text-sm">VOTE FOR $MHGA</span>
+                  <span className="text-red-400 text-xs">Help us moon!</span>
                 </div>
-                <svg className="w-5 h-5 text-white group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-red-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
