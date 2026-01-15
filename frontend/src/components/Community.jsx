@@ -16,19 +16,30 @@ const Community = () => {
 
   return (
     <section id="community" className="py-20 px-4 relative overflow-hidden">
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="comic-title text-[#F9C93A] text-4xl sm:text-5xl lg:text-6xl mb-4">
-            JOIN THE <span className="text-white">MOVEMENT</span>
+            CREATOR <span className="text-white">REWARDS</span>
           </h2>
           <p className="marker-text text-white text-xl">
-            Connect with fellow diamond hands
+            3-Phase Evolution
           </p>
         </div>
 
+        {/* Creator Rewards Image */}
+        <div className="flex justify-center mb-12">
+          <div className="sketch-border-gold bg-[#262626] p-4 max-w-4xl">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/rwdu9gji_image.png"
+              alt="$MHGA Creator Rewards 3-Phase Evolution"
+              className="w-full rounded-lg"
+            />
+          </div>
+        </div>
+
         {/* Contract Address Card */}
-        <div className="sketch-border-gold bg-[#262626] p-8 mb-12 text-center">
+        <div className="sketch-border-gold bg-[#262626] p-8 mb-12 text-center max-w-3xl mx-auto">
           <h3 className="comic-title text-[#F9C93A] text-2xl mb-4">Contract Address</h3>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <div className="bg-[#353535] px-6 py-4 rounded-lg border-2 border-[#F9C93A]/50 flex-1 max-w-2xl w-full">
