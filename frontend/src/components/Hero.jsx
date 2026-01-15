@@ -170,17 +170,38 @@ const Hero = () => {
               )}
             </div>
 
-            {/* Stats */}
+            {/* Live Stats */}
             <div className="mt-8 grid grid-cols-3 gap-4">
               {[
-                { label: 'Holders', value: '???', sub: 'and counting' },
-                { label: 'Diamond', value: '100%', sub: 'hands only' },
-                { label: 'Rugs', value: '0', sub: 'forever' }
+                { 
+                  label: 'Market Cap', 
+                  value: liveData.loading ? '...' : formatNumber(liveData.marketCap), 
+                  sub: 'LIVE' 
+                },
+                { 
+                  label: '24h Change', 
+                  value: liveData.loading ? '...' : (liveData.priceChange24h !== null ? `${liveData.priceChange24h > 0 ? '+' : ''}${liveData.priceChange24h?.toFixed(2)}%` : '---'), 
+                  sub: liveData.priceChange24h > 0 ? 'PUMPING' : liveData.priceChange24h < 0 ? 'DIP BUY' : 'LIVE',
+                  isPositive: liveData.priceChange24h > 0
+                },
+                { 
+                  label: '24h Volume', 
+                  value: liveData.loading ? '...' : formatNumber(liveData.volume24h), 
+                  sub: 'LIVE' 
+                }
               ].map((stat, i) => (
-                <div key={i} className="sketch-card p-4 text-center" style={{ animationDelay: `${i * 0.2}s` }}>
-                  <div className="comic-title-light text-[#D2A31E] text-2xl sm:text-3xl">{stat.value}</div>
+                <div key={i} className="sketch-card p-4 text-center relative overflow-hidden" style={{ animationDelay: `${i * 0.2}s` }}>
+                  {/* Live indicator pulse */}
+                  <div className="absolute top-2 right-2 flex items-center gap-1">
+                    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                  </div>
+                  <div className={`comic-title-light text-2xl sm:text-3xl ${stat.isPositive !== undefined ? (stat.isPositive ? 'text-green-500' : 'text-red-500') : 'text-[#D2A31E]'}`}>
+                    {stat.value}
+                  </div>
                   <div className="marker-text text-[#262626] text-sm">{stat.label}</div>
-                  <div className="text-[#353535] text-xs font-medium">{stat.sub}</div>
+                  <div className={`text-xs font-bold ${stat.isPositive !== undefined ? (stat.isPositive ? 'text-green-600' : 'text-red-600') : 'text-[#353535]'}`}>
+                    {stat.sub}
+                  </div>
                 </div>
               ))}
             </div>
