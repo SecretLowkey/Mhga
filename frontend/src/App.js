@@ -9,9 +9,11 @@ import Winners from "./components/Winners";
 import MemeGallery from "./components/MemeGallery";
 import Community from "./components/Community";
 import Footer from "./components/Footer";
+import MemeGenerator from "./components/MemeGenerator";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
+  const [showMemeGenerator, setShowMemeGenerator] = useState(false);
 
   useEffect(() => {
     // Smooth scroll for anchor links
@@ -41,15 +43,27 @@ function App() {
     setShowIntro(false);
   };
 
+  const openMemeGenerator = () => {
+    setShowMemeGenerator(true);
+  };
+
+  const closeMemeGenerator = () => {
+    setShowMemeGenerator(false);
+  };
+
   if (showIntro) {
     return <IntroPage onComplete={handleIntroComplete} />;
   }
 
+  if (showMemeGenerator) {
+    return <MemeGenerator onBack={closeMemeGenerator} />;
+  }
+
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <Header />
+      <Header onOpenMemeGenerator={openMemeGenerator} />
       <main>
-        <Hero />
+        <Hero onOpenMemeGenerator={openMemeGenerator} />
         <About />
         <Manifesto />
         <Winners />
