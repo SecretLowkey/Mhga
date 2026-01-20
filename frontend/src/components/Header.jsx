@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { siteConfig } from '../data/mock';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 
-const Header = () => {
+const Header = ({ onOpenMemeGenerator }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
