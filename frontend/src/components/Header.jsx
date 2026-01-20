@@ -55,6 +55,13 @@ const Header = ({ onOpenMemeGenerator }) => {
                 {link.label}
               </a>
             ))}
+            <button
+              onClick={onOpenMemeGenerator}
+              className="marker-text text-[#E1D3C1] text-lg hover:text-[#F9C93A] transition-colors animate-pop flex items-center gap-1"
+            >
+              <Sparkles className="w-4 h-4" />
+              Meme Gen
+            </button>
           </div>
 
           {/* Social Links & Buy Button */}
