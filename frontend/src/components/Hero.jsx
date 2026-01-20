@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { siteConfig } from '../data/mock';
 import { ArrowDown, Copy, Check } from 'lucide-react';
 
-const Hero = () => {
+const Hero = ({ onOpenMemeGenerator }) => {
   const [copied, setCopied] = useState(false);
   const [liveData, setLiveData] = useState({
     marketCap: null,
