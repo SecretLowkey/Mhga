@@ -74,6 +74,12 @@ const Hero = ({ onOpenMemeGenerator }) => {
               >
                 <span>BUY $MHGA</span>
               </a>
+              <button
+                onClick={onOpenMemeGenerator}
+                className="cartoon-btn bg-[#262626] text-[#F9C93A] px-8 py-4 text-2xl inline-flex items-center justify-center gap-2 border-4 border-[#F9C93A]"
+              >
+                <span>CREATE MEME</span>
+              </button>
             </div>
 
             {/* Social Icons Row - matching Footer style */}
