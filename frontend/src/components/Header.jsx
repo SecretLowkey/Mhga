@@ -143,6 +143,16 @@ const Header = ({ onOpenMemeGenerator }) => {
                   {link.label}
                 </a>
               ))}
+              <button
+                onClick={() => {
+                  setIsOpen(false);
+                  onOpenMemeGenerator();
+                }}
+                className="marker-text text-[#E1D3C1] text-xl hover:text-[#F9C93A] transition-colors flex items-center gap-2 text-left"
+              >
+                <Sparkles className="w-5 h-5" />
+                Meme Generator
+              </button>
               <hr className="border-[#F9C93A]/30" />
               <div className="flex justify-center gap-3">
                 <a
