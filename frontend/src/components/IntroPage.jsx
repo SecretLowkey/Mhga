@@ -81,22 +81,22 @@ const IntroPage = ({ onComplete }) => {
         )}
 
         {/* Controls Overlay - always show skip, show mute only when playing */}
-        <div className="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-6">
+        <div className="absolute bottom-4 left-0 right-0 flex justify-center items-center gap-4">
           {/* Mute/Unmute Button - only when playing */}
           {isPlaying && (
             <button
               onClick={toggleMute}
-              className="cartoon-btn bg-[#F9C93A] text-[#262626] p-4 flex items-center gap-2"
+              className="cartoon-btn bg-[#F9C93A] text-[#262626] px-3 py-2 flex items-center gap-1 text-sm"
             >
               {isMuted ? (
                 <>
-                  <VolumeX className="w-6 h-6" />
-                  <span className="comic-title-light text-lg">UNMUTE</span>
+                  <VolumeX className="w-4 h-4" />
+                  <span className="comic-title-light text-sm">UNMUTE</span>
                 </>
               ) : (
                 <>
-                  <Volume2 className="w-6 h-6" />
-                  <span className="comic-title-light text-lg">MUTE</span>
+                  <Volume2 className="w-4 h-4" />
+                  <span className="comic-title-light text-sm">MUTE</span>
                 </>
               )}
             </button>
@@ -105,10 +105,10 @@ const IntroPage = ({ onComplete }) => {
           {/* Skip Button - always visible */}
           <button
             onClick={handleSkip}
-            className="cartoon-btn bg-[#262626] text-[#F9C93A] p-4 flex items-center gap-2 border-2 border-[#F9C93A]"
+            className="cartoon-btn bg-[#262626] text-[#F9C93A] px-3 py-2 flex items-center gap-1 border-2 border-[#F9C93A] text-sm"
           >
-            <span className="comic-title-light text-lg">SKIP</span>
-            <SkipForward className="w-6 h-6" />
+            <span className="comic-title-light text-sm">SKIP</span>
+            <SkipForward className="w-4 h-4" />
           </button>
         </div>
 
