@@ -130,29 +130,6 @@ const Hero = ({ onOpenMemeGenerator }) => {
               </a>
             </div>
 
-            {/* CoinSniper Vote Banner */}
-            <div className="mt-6 flex justify-center lg:justify-start">
-              <a
-                href="https://coinsniper.net/coin/88852"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center gap-4 bg-white px-6 py-3 rounded-xl border-2 border-red-500 hover:bg-red-50 transition-all shadow-lg hover:shadow-red-500/30 hover:scale-105"
-              >
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/b3c8x1uw_image.png"
-                  alt="CoinSniper"
-                  className="h-10 object-contain"
-                />
-                <div className="flex flex-col">
-                  <span className="text-red-600 font-bold text-sm">VOTE FOR $MHGA</span>
-                  <span className="text-red-400 text-xs">Help us moon!</span>
-                </div>
-                <svg className="w-5 h-5 text-red-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-
             {/* Contract Address */}
             <div className="mt-6 sketch-border-gold bg-[#262626] px-6 py-4 max-w-xl mx-auto lg:mx-0">
               <p className="comic-title text-[#F9C93A] text-lg mb-2 text-center lg:text-left">Contract Address</p>
