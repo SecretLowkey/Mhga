@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Manifesto from "./components/Manifesto";
-import Winners from "./components/Winners";
 import MemeGallery from "./components/MemeGallery";
 import Community from "./components/Community";
 import Footer from "./components/Footer";
@@ -66,7 +65,6 @@ function App() {
         <Hero onOpenMemeGenerator={openMemeGenerator} />
         <About />
         <Manifesto />
-        <Winners />
         <MemeGallery />
         <Community />
       </main>
