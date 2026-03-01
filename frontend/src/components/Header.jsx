@@ -28,21 +28,37 @@ const Header = ({ onOpenMemeGenerator }) => {
             </span>
           </a>
 
-          {/* CoinSniper Badge */}
-          <a 
-            href="https://coinsniper.net/coin/88852" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hidden lg:flex items-center gap-2 bg-[#353535] px-4 py-2 rounded-lg border-2 border-red-500 hover:bg-red-500/20 transition-colors group"
-            title="Vote on CoinSniper"
-          >
-            <img 
-              src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/b3c8x1uw_image.png"
-              alt="CoinSniper"
-              className="h-8 object-contain"
-            />
-            <span className="text-red-500 text-sm font-bold group-hover:text-red-400">VOTE</span>
-          </a>
+          {/* Listing Badges */}
+          <div className="hidden lg:flex items-center gap-2">
+            {/* CoinGecko Badge */}
+            <a 
+              href="https://www.coingecko.com/en/coins/make-holding-great-again" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#353535] px-3 py-2 rounded-lg border-2 border-[#8DC63F] hover:bg-[#8DC63F]/20 transition-colors group"
+              title="View on CoinGecko"
+            >
+              <img 
+                src="https://static.coingecko.com/s/coingecko-logo-8903d34ce19ca4be1c81f0db30e924571d53f8ce7fe2458d2c80a39f0e02bd07a.png"
+                alt="CoinGecko"
+                className="h-6 object-contain"
+              />
+            </a>
+            {/* CoinMarketCap Badge - Placeholder */}
+            {/* <a 
+              href="COINMARKETCAP_URL" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-[#353535] px-3 py-2 rounded-lg border-2 border-[#3861FB] hover:bg-[#3861FB]/20 transition-colors group"
+              title="View on CoinMarketCap"
+            >
+              <img 
+                src="COINMARKETCAP_LOGO"
+                alt="CoinMarketCap"
+                className="h-6 object-contain"
+              />
+            </a> */}
+          </div>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-6">
