@@ -35,13 +35,13 @@ const Header = ({ onOpenMemeGenerator }) => {
               href="https://www.coingecko.com/en/coins/make-holding-great-again" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center bg-black px-4 py-2 rounded-lg border-2 border-[#8DC63F] hover:border-[#F9C93A] transition-colors"
+              className="flex items-center bg-black px-5 py-2 rounded-lg border-2 border-[#8DC63F] hover:border-[#F9C93A] transition-colors"
               title="View on CoinGecko"
             >
               <img 
                 src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/2uzbe55k_image.png"
                 alt="CoinGecko"
-                className="h-9 object-contain"
+                className="h-12 object-contain"
               />
             </a>
             {/* CoinMarketCap Badge - Placeholder for future */}
@@ -49,13 +49,13 @@ const Header = ({ onOpenMemeGenerator }) => {
               href="COINMARKETCAP_URL" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center bg-[#0D1421] px-4 py-2 rounded-lg border-2 border-[#3861FB] hover:border-[#F9C93A] transition-colors"
+              className="flex items-center bg-[#0D1421] px-5 py-2 rounded-lg border-2 border-[#3861FB] hover:border-[#F9C93A] transition-colors"
               title="View on CoinMarketCap"
             >
               <img 
                 src="COINMARKETCAP_LOGO"
                 alt="CoinMarketCap"
-                className="h-9 object-contain"
+                className="h-12 object-contain"
               />
             </a> */}
           </div>
