@@ -39,12 +39,12 @@ const Header = ({ onOpenMemeGenerator }) => {
               title="View on CoinGecko"
             >
               <img 
-                src="https://static.coingecko.com/s/coingecko-logo-8903d34ce19ca4be1c81f0db30e924571d53f8ce7fe2458d2c80a39f0e02bd07a.png"
+                src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/kllfmg2v_image.png"
                 alt="CoinGecko"
                 className="h-6 object-contain"
               />
             </a>
-            {/* CoinMarketCap Badge - Placeholder */}
+            {/* CoinMarketCap Badge - Placeholder for future */}
             {/* <a 
               href="COINMARKETCAP_URL" 
               target="_blank" 
