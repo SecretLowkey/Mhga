@@ -18,7 +18,7 @@ const About = () => {
         <div className="flex justify-center">
           <div className="sketch-border-gold bg-[#262626] p-4 max-w-4xl">
             <img 
-              src="https://customer-assets.emergentagent.com/job_quackcoin/artifacts/rwdu9gji_image.png"
+              src="https://customer-assets.emergentagent.com/job_1068b2ca-2d6e-4483-90ae-77a0f1d9d048/artifacts/i13cfrfa_image.png"
               alt="$MHGA Creator Rewards 3-Phase Evolution"
               className="w-full rounded-lg"
             />
