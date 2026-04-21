@@ -13,3 +13,8 @@
   CI = "false"
   DISABLE_ESLINT_PLUGIN = "true"
   NPM_FLAGS = "--legacy-peer-deps"
+[[redirects]]
+  from = "/*"
+  to = "https://makeholdinggreatagain.com/:splat"
+  status = 301
+  force = true
